@@ -1,0 +1,717 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+
+body{
+    display: grid;
+    height: 120vh;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 10% 90%;
+    grid-template-areas: 
+    'h h h h h h'
+    'a m m m m m'
+    'a m m m m m'
+    'a m m m m m'
+    'a m m m m m'
+    'a m m m m m';
+}
+
+
+header, main , aside{
+    border: 1px solid black;
+}
+
+header{
+    grid-area: h;
+    
+}
+
+aside{
+    grid-area: a;
+    width: 280px;
+}
+
+
+main div{
+    border: 1px solid black;
+    
+}
+main{
+    grid-area: m;
+    display: grid;
+    grid-template-areas:
+    'z z z z z z z z z z z z' 
+    'n n n n n n i i i e e e '  
+    'p p p p p p p p a a a a '
+    'p p p p p p p p a a a a '
+    't t t t t t t t a a a a ';
+    gap: 20px;
+    padding: 20px;
+    background-color: #E5E5E5;
+    
+}
+.overview{
+    grid-area: z;
+}
+.netWorth{
+    grid-area: n;
+    background-color: #FFFFFF;
+    padding-left: 20px;
+}
+
+.income{
+    grid-area: i;
+    background-color: #FFFFFF;
+}
+
+.expenses{
+    grid-area: e;
+    background-color: #FFFFFF;
+}
+
+.portfolio{
+    grid-area: p;
+    background-color: #FFFFFF;
+}
+
+.allAssets{
+    grid-area: a;
+    background-color: #FFFFFF;
+}
+
+.transactions{
+    grid-area: t;
+    background-color: #FFFFFF;
+}
+
+
+header{
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    
+}
+
+header div{
+    display: flex;
+    align-items: center;
+    
+}
+.lefth{
+    width: 400px;
+    margin-left: 20px;
+
+}
+
+.lefth img{
+    height: 70%;
+    width: 100px;
+    margin-left: 10px;
+    
+}
+
+
+#burger{
+    height: 12px;
+    position: relative;
+    left: 80px;
+}
+
+.centerh{
+    width: 750px;
+    margin-left: -70px;
+}
+
+.centerh input{
+    width: 300px;
+    height: 29px;
+    border: 0px ;
+    border-radius: 6px;
+    background-color: #F5F7FA;
+    padding-left: 10px;
+    position: relative;
+    right: 30px;
+}
+
+.centerh img{
+    position: relative;
+    right: 25px;
+
+}
+
+.righth{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin-right: 17px;
+    margin-left: 85px;
+   
+}
+
+.righth img{
+    width: 29px;
+    height: 29px;
+}
+
+#arrow{
+    width: 10px;
+    height: 10px;
+    margin-left: 3px;
+
+}
+#ring{
+    width: 24px;
+    height: 24px;
+}
+.righth h1{
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+
+
+
+.container{
+    display: flex;
+    background-color: #784FFE;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+    height: 70px;
+    width: 90%;
+    margin-left: 8px;
+    border-radius: 8px;
+}
+
+#eth{
+    width: 30px;
+    height: 30px;
+    background-color: #FFFFFF ;
+}
+
+
+.container h1 {
+    font-size: 16px;
+    margin-left: -10px;
+    color: #FFFFFF;
+    position: relative;
+    right: 20px;
+}
+
+.container img{
+    width: 43px;
+    height: 43px;
+}
+
+
+
+
+
+#arrow2{
+    width: 10px;
+    height: 10px;
+}
+
+
+.container1{
+    display: flex;
+    background-color: #784FFE1F;
+    align-items: center;
+    margin-top: 15px;
+    height: 60px;
+    width: 90%;
+    margin-left: 8px;
+    border-radius: 8px;
+    justify-content: space-around;
+    
+}
+
+.container1 h1{
+    font-size: 16px;
+    color: #784FFE;
+    margin-left: 10px;
+    position: relative;
+    right: 70px;
+}
+.container2{
+    display: flex;
+    width: 90%;
+    height: 50px;
+    align-items: center;
+    margin-left: 10px;
+    justify-content: space-around;
+
+}
+
+.container2 img{
+    width: 18px;
+    height: 18px;
+}
+
+.container2 p{
+    font-size: 16px;
+    margin-right: 50px;
+    position: relative;
+    right: 40px;
+}
+
+
+#empty{
+    width: 100%;
+    height: 100px;
+    border: 0px;
+}
+
+
+.logout{
+    display: flex;
+    color: #EB3B5A;
+    align-items: center;
+    position: relative;
+    top: 270px;
+    left: 40px;
+}
+
+.logout h3{
+    font-size: 16px;
+    position: relative;
+    left: 15px;
+    
+}
+
+.overview{
+    height: 40px;
+    margin-bottom: -200px;
+
+}
+
+.netWorth, .income , .expenses{
+    margin-top: 50px;
+    position: relative;
+    right: 5px;
+}
+
+.overview {
+    display: flex;
+    border: 0px;
+}
+
+.overview h1{
+    margin-left: 10px;
+}
+
+.overview button{
+    display: flex;
+    align-items: center;
+    background-color: #784FFE;
+    border-radius: 12px;
+    width: 124px;
+    justify-content: center;
+    position: relative;
+    left: 760px;
+}
+
+.overview button p{
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+.overview button img{
+    margin-right: 10px;
+}
+
+.cont{
+    display: flex;
+}
+.netWorth .left{
+    display: flex;
+    width: 50%;
+}
+
+.netWorth .right{
+    width: 50%;
+}
+.netWorth{
+    width: 490px;
+    height: 187px;
+    margin-bottom: -100px;
+}
+
+.income div , .expenses div{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    margin-right: -100px;
+    position: relative;
+    top: 10px;
+    border: 0px;
+}
+.income , .expenses{
+    height: 187px;
+    width: 248px;
+    padding-left: 25px;
+}
+.income h3 , .expenses h3{
+    position: relative;
+    bottom: 5px;
+}
+
+.allAssets{
+    width: 337px;
+}
+.assets{
+    display: flex;
+    margin-left: 30px;
+    border: 0px;
+}
+
+
+.assets h3{
+    font-size: 20px;
+
+}
+
+.assets div{
+    width: 32px;
+    height: 32px;
+    background-color: #784FFE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    margin-right: 20px;
+    border: 0px;
+}
+.assets  img{
+    width: 16px;
+    height: 16px;
+    
+}
+
+.etherium{
+    display: flex;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.lefteth img{
+    margin-right:14px ;
+}
+.centereth h4{
+    font-size: 16px;
+}
+
+.centereth p{
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.righteth p{
+    font-size: 12px;
+}
+
+
+.centereth{
+    align-items: stretch;
+}
+
+.righteth {
+    margin-left: 30px;
+}
+
+.righteth img{
+    margin-top: 10px;
+}
+
+
+.allAssets button{
+    width: 285px;
+    height: 38px;
+    border-radius: 12px;
+    background-color: #784FFE;
+    font-size: 12px;
+    color: #FFFFFF;
+    border: 0px;
+    position: relative;
+    left: 25px;
+    margin-bottom: 22px;
+}
+
+
+
+main div{
+    border-radius: 8px;
+}
+
+
+.transactions div{
+    display: flex;
+}
+
+
+#img{
+    width: 32px;
+    height: 32px;
+    background-color: #784FFE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.transactions div h2{
+    margin-left: 20px;
+}
+
+.transactions >div{
+    margin-left: 30px;
+    margin-top: 27px;
+    align-items: center;
+    border: 0px;
+}
+
+
+.transactions h2 + button {
+    width: 97px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 334px;
+    border-radius: 12px;
+    background-color: #EFEBFF;
+    border: 0px;
+}
+
+.william {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    border: 0px;
+}
+
+
+.william .left123{
+    align-items: center;
+    margin-right: 48px;
+    margin-left: 15px;
+    border: 0px;
+}
+
+.william .right123{
+    align-items: center;
+    border: 0px;
+}
+
+
+.left123 p{
+    margin: 0px 40px;
+}
+
+.left123 button{
+    width: 146px;
+    height: 32px;
+    background-color: #6334FE1F;
+    border: 0px;
+    border-radius: 6px;
+}
+
+
+.right123 p{
+    font-size: 15px;
+    margin-right: 20px;
+   
+}
+
+.right123 img{
+    margin: 0px 10px;
+}
+
+
+.transactions{
+    height: fit-content ;
+    padding-bottom: 27px;
+    
+}
+
+
+.portfolio >div{
+    display: flex;
+    position: relative;
+    left: 30px;
+    top: 27px;
+    align-items: center;
+
+}
+
+.portfolio div h2{
+    margin-left: 20px;
+    margin-right: 220px
+
+}
+
+
+.portfolio div button{
+    width: 97px;
+    height: 38px;
+    background-color: #EFEBFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    border: 0px;
+}
+.portfolio {
+    height: 344px;
+}
+
+
+.portfolio .hard  {
+    display: block;
+}
+.portfolio .hard p{
+    margin-top: 25px;
+}
+.portfolio .calendar{
+    display: flex;
+    margin-left: 50px;
+}
+
+
+.hard1{
+    display: flex;
+}
+
+.portfolio div{
+    border: 0px;
+}
+
+.hard1 p , .calendar p{
+    color: #899BBE;
+
+}
+
+.hard1 div img{
+
+    position: relative;
+    top: 45px;
+
+}
+
+.portfolio .calendar p{
+   margin: 0px 15px;
+
+
+}
+
+.etherium .lefteth{
+    border: 0px;
+}
+
+.etherium{
+    border: 0px;
+    margin: 15px;
+}
+
+.allAssets button{
+    position: relative;
+    top: 10px;
+}
+
+.allAssets .assets{
+    align-items: center;
+}
+.etherium .centereth{
+    border: 0px;
+}
+
+.etherium .righteth{
+    border: 0px;
+}
+.netWorth{
+    padding-top: 40px;
+}
+.allAssets hr{
+    margin-left: 15px;
+}
+
+.netWorth .central{
+    display: flex;
+}
+
+.rightnet .special{
+    display: flex;
+    align-items: center;
+}
+
+.rightnet h1{
+    font-size: 36px;
+}
+
+.rightnet .special img{
+    width: 56px;
+    height: 16px;
+    margin-left: 10px;
+}
+
+
+.rightnet .button button{
+    width: 94px;
+    height: 38px;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+#b1{
+    background-color: #784FFE;
+}
+
+
+.rightnet{
+    border: 0px;
+}
+
+.netWorth{
+    border: 0px;
+    position: relative;
+    left: 5px;
+}
+
+.special{
+    border: 0px;
+}
+
+.button{
+    border: 0px;
+}
+
+.leftnet{
+    border: 0px;
+    margin-left: 20px;
+}
+
+.central{
+    border: 0px;
+}
+
+.overview button{
+    border: 0px;
+}
+
+.income, .expenses , .portfolio , .allAssets, .transactions {
+    border: 0px;
+}
+
+header , main , aside{
+    border: 0px;
+}
+
+header{
+    
+}
